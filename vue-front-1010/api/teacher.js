@@ -13,5 +13,11 @@ export default {
       url: '/educenter/member/getMemberInfo',
       method: 'get'
     })
+  },
+  getTeacherInfo(id){
+    return request({
+      url: `/eduservice/teacherfront/getTeacherFrontInfo/${id}`,
+      method: 'get'
+    })
   }
 }
