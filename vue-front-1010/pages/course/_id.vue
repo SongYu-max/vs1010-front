@@ -85,7 +85,7 @@
                   </h6>
                   <div class="course-txt-body-wrap">
                     <section class="course-txt-body">
-                      <p v-html="courseWebVo.description">{{courseWebVo.description}}</p>
+                      <p v-html="courseWebVo.description"></p>
                     </section>
                   </div>
                 </div>
