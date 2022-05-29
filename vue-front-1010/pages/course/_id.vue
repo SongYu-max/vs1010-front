@@ -56,7 +56,7 @@
               <aside>
                 <span class="c-fff f-fM">课时数</span>
                 <br>
-                <h6 class="c-fff f-fM mt10">20</h6>
+                <h6 class="c-fff f-fM mt10">{{courseWebVo.lessonNum}}</h6>
               </aside>
             </li>
             <li>
@@ -64,7 +64,7 @@
               <aside>
                 <span class="c-fff f-fM">浏览数</span>
                 <br>
-                <h6 class="c-fff f-fM mt10">501</h6>
+                <h6 class="c-fff f-fM mt10">{{courseWebVo.viewCount}}</h6>
               </aside>
             </li>
           </ol>
@@ -141,11 +141,11 @@
                   <li>
                     <div class="u-face">
                       <a href="#">
-                        <img :src="courseWebVo.avatar" width="50" height="50" alt>
+                        <img :src="courseWebVo.avatar"  width="50" height="50" alt>
                       </a>
                     </div>
                     <section class="hLh30 txtOf">
-                      <a class="c-333 fsize16 fl" href="#">{{courseWebVo.teacherName}}</a>
+                      <a class="c-333 fsize16 fl" :href="'/teacher/'+courseWebVo.teacherId">{{courseWebVo.teacherName}}</a>
                     </section>
                     <section class="hLh20 txtOf">
                       <span class="c-999">{{courseWebVo.intro}}</span>
